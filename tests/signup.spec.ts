@@ -223,7 +223,5 @@ await fileInputs.first().setInputFiles(uploadFilePath);
 
   await expect(page.getByText(path.basename(uploadFilePath))).toBeVisible();
 
-  await page.getByRole('button', { name: 'Submit' }).click(); 
-  
-  await page.goto('https://authorized-partner.vercel.app/admin/profile'); 
+  await page.getByRole('button', { name: 'Submit' }).click();
 });
